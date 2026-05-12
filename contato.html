@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato — Isaac Pereira Correa</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="nav-initials">IP</span>
+      <span class="nav-name">Isaac Correa</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Sobre mim</a></li>
+      <li><a href="formacao.html" class="nav-link">Formação</a></li>
+      <li><a href="portfolio.html" class="nav-link">Portfólio</a></li>
+      <li><a href="contato.html" class="nav-link active">Contato</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-btn" id="themeToggle" aria-label="Alternar tema">
+        <span class="theme-icon" id="themeIcon">☀</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Sobre mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html" class="active">Contato</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb orb1"></div>
+    </div>
+    <div class="container">
+      <span class="section-tag">04 / Contato</span>
+      <h1 class="page-hero-title">Vamos<br><span class="title-accent">Conversar</span></h1>
+      <p class="page-hero-sub">Tem um projeto, dúvida ou oportunidade? Fico à vontade para conversar!</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info lateral -->
+        <div class="contact-info">
+          <h2 class="contact-info-title">Fale<br>comigo</h2>
+          <p class="contact-info-sub">
+            Respondo por e-mail ou pelo LinkedIn. Estou sempre aberto a novas conexões,
+            parcerias e oportunidades na área de tecnologia e agronegócio.
+          </p>
+
+          <div class="contact-items">
+            <a href="mailto:isaacytbr@gmail.com" class="contact-item">
+              <div class="ci-icon">@</div>
+              <div class="ci-text">
+                <span class="ci-label">E-mail</span>
+                <span class="ci-value">isaacytbr@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/isaac-pereira-correa-147509315/" target="_blank" class="contact-item">
+              <div class="ci-icon">in</div>
+              <div class="ci-text">
+                <span class="ci-label">LinkedIn</span>
+                <span class="ci-value">isaac-pereira-correa</span>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="ci-icon">◎</div>
+              <div class="ci-text">
+                <span class="ci-label">Localização</span>
+                <span class="ci-value">Balsas, Maranhão — Brasil</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário -->
+        <div class="contact-form-wrap">
+          <div class="form-card">
+            <h3 class="form-title">Envie uma mensagem</h3>
+
+            <!-- Formulário com validação JavaScript -->
+            <div id="contactForm">
+
+              <div class="form-group">
+                <label for="nome">Nome completo <span class="req">*</span></label>
+                <input type="text" id="nome" placeholder="Seu nome completo" autocomplete="off" />
+                <span class="form-error" id="nomeErr"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">E-mail <span class="req">*</span></label>
+                <input type="text" id="email" placeholder="seu@email.com" autocomplete="off" />
+                <span class="form-error" id="emailErr"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Mensagem <span class="req">*</span></label>
+                <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+                <span class="form-error" id="mensagemErr"></span>
+              </div>
+
+              <button type="button" class="btn btn-primary btn-full" id="btnEnviar" onclick="enviarFormulario()">
+                Enviar mensagem →
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL DE SUCESSO -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <div class="modal-icon">✓</div>
+      <h3 class="modal-title">Mensagem enviada!</h3>
+      <p class="modal-desc">
+        Obrigado pelo contato, <strong id="modalNome"></strong>!<br>
+        Sua mensagem foi recebida com sucesso. Responderei em breve pelo e-mail informado.
+      </p>
+      <button class="btn btn-primary" onclick="fecharModal()">Fechar</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 Isaac Pereira Correa</span>
+      <span class="footer-sep">·</span>
+      <span>Desenvolvido com HTML5, CSS3 e JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

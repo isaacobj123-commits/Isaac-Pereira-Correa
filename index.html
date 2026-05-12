@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isaac Pereira Correa — Tecnologia & Agronegócio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Google Fonts: display + body pairing -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="nav-initials">IP</span>
+      <span class="nav-name">Isaac Correa</span>
+    </div>
+
+    <!-- Desktop menu -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link active">Sobre mim</a></li>
+      <li><a href="formacao.html" class="nav-link">Formação</a></li>
+      <li><a href="portfolio.html" class="nav-link">Portfólio</a></li>
+      <li><a href="contato.html" class="nav-link">Contato</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <!-- Botão tema claro/escuro -->
+      <button class="theme-btn" id="themeToggle" aria-label="Alternar tema">
+        <span class="theme-icon" id="themeIcon">☀</span>
+      </button>
+      <!-- Hamburguer mobile -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html" class="active">Sobre mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <!-- Fundo decorativo -->
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponível para colaborações
+      </div>
+
+      <h1 class="hero-title">
+        <span class="title-line reveal">Isaac</span>
+        <span class="title-line title-accent reveal">Pereira</span>
+        <span class="title-line reveal">Correa</span>
+      </h1>
+
+      <p class="hero-subtitle reveal">
+        Especialista em Tecnologia · <span class="highlight">John Deere</span> · Soluções Integradas
+      </p>
+
+      <p class="hero-location reveal">
+        <span class="loc-icon">◎</span> Balsas, Maranhão — Natural de Sambaíba/MA
+      </p>
+
+      <div class="hero-btns reveal">
+        <a href="portfolio.html" class="btn btn-primary">Ver Portfólio</a>
+        <a href="contato.html" class="btn btn-outline">Entrar em Contato</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE MIM ===== -->
+  <section class="section" id="sobre">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-tag">01 / Sobre mim</span>
+        <h2 class="section-title">Quem sou eu</h2>
+      </div>
+
+      <div class="about-grid">
+        <!-- Avatar / Iniciais -->
+        <div class="about-avatar-col">
+          <div class="avatar-card">
+            <div class="avatar-initials">IP</div>
+            <div class="avatar-glow"></div>
+          </div>
+          <!-- Stats rápidos -->
+          <div class="quick-stats">
+            <div class="stat">
+              <span class="stat-number">18+</span>
+              <span class="stat-label">Certificados JD</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">1+</span>
+              <span class="stat-label">Ano na John Deere</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">∞</span>
+              <span class="stat-label">Vontade de aprender</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="about-text-col">
+          <p class="about-intro">
+            Olá! Sou <strong>Isaac Pereira Correa</strong>, natural de Sambaíba, Maranhão.
+            Atualmente curso <strong>Ciência da Computação</strong> pela UNINTER e trabalho
+            em uma concessionária da <strong>John Deere</strong> no time de
+            <em>Soluções Integradas</em>, onde conecto máquinas agrícolas e dados para
+            o agronegócio moderno.
+          </p>
+          <p class="about-body">
+            No meu dia a dia, estudo e aplico tecnologias voltadas às máquinas agrícolas —
+            Operations Center, JDLink, telemetria e análise de dados. Acredito que a
+            tecnologia é a ponte entre a terra e o futuro.
+          </p>
+          <p class="about-body">
+            Sou movido pela curiosidade e pela vontade de aprender sempre mais, seja
+            sobre software, hardware ou as novas fronteiras da agricultura de precisão.
+          </p>
+
+          <!-- Skills chips -->
+          <div class="skill-chips">
+            <span class="chip">After Effects</span>
+            <span class="chip">Programação</span>
+            <span class="chip">Agricultura de Precisão</span>
+            <span class="chip">JDLink</span>
+            <span class="chip">Telemetria</span>
+            <span class="chip">Máquinas Agrícolas</span>
+            <span class="chip">Operations Center</span>
+          </div>
+
+          <a href="https://www.linkedin.com/in/isaac-pereira-correa-147509315/" target="_blank" class="btn btn-sm btn-outline">
+            LinkedIn →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIÊNCIA ===== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Experiência</span>
+        <h2 class="section-title">Onde atuo</h2>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-logo">
+          <div class="jd-logo">JD</div>
+        </div>
+        <div class="exp-info">
+          <h3 class="exp-role">Auxiliar de Soluções Integradas</h3>
+          <p class="exp-company">Lavronorte Máquinas · <span>John Deere</span></p>
+          <p class="exp-date">Mai. 2025 – Presente · Balsas, MA</p>
+          <p class="exp-desc">
+            Suporte em tecnologias John Deere como Operations Center,
+            conectividade JDLink e análise de dados agronômicos. Telemetria
+            e monitoramento de máquinas, análise de dados operacionais.
+          </p>
+          <div class="exp-tags">
+            <span>Operations Center</span>
+            <span>JDLink</span>
+            <span>Telemetria</span>
+            <span>Análise de Dados</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 Isaac Pereira Correa</span>
+      <span class="footer-sep">·</span>
+      <span>Desenvolvido com HTML5, CSS3 e JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

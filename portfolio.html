@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio — Isaac Pereira Correa</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="nav-initials">IP</span>
+      <span class="nav-name">Isaac Correa</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link">Sobre mim</a></li>
+      <li><a href="formacao.html" class="nav-link">Formação</a></li>
+      <li><a href="portfolio.html" class="nav-link active">Portfólio</a></li>
+      <li><a href="contato.html" class="nav-link">Contato</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-btn" id="themeToggle" aria-label="Alternar tema">
+        <span class="theme-icon" id="themeIcon">☀</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html">Sobre mim</a></li>
+      <li><a href="formacao.html">Formação</a></li>
+      <li><a href="portfolio.html" class="active">Portfólio</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb orb2"></div>
+    </div>
+    <div class="container">
+      <span class="section-tag">03 / Portfólio</span>
+      <h1 class="page-hero-title">Meus<br><span class="title-accent">Trabalhos</span></h1>
+      <p class="page-hero-sub">Projetos, certificações e contribuições que desenvolvi</p>
+    </div>
+  </div>
+
+  <!-- FILTROS -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Botões filtro -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="agro">Agronegócio</button>
+        <button class="filter-btn" data-filter="tech">Tecnologia</button>
+        <button class="filter-btn" data-filter="cert">Certificações</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <!-- Card 1 -->
+        <div class="port-card" data-cat="agro">
+          <div class="port-card-top agro-gradient">
+            <span class="port-card-icon">🛰️</span>
+          </div>
+          <div class="port-card-body">
+            <span class="port-tag">Agronegócio</span>
+            <h3>Conectividade JDLink</h3>
+            <p>Implementação e suporte à conectividade JDLink em máquinas agrícolas,
+               integração com Operations Center para monitoramento em tempo real.</p>
+            <a href="https://www.linkedin.com/in/isaac-pereira-correa-147509315/" target="_blank" class="port-link">Ver no LinkedIn →</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="port-card" data-cat="agro">
+          <div class="port-card-top green-gradient">
+            <span class="port-card-icon">📡</span>
+          </div>
+          <div class="port-card-body">
+            <span class="port-tag">Agronegócio</span>
+            <h3>Telemetria de Máquinas</h3>
+            <p>Telemetria e monitoramento de máquinas agrícolas John Deere,
+               análise de dados operacionais para otimização de desempenho em campo.</p>
+            <a href="https://www.linkedin.com/in/isaac-pereira-correa-147509315/" target="_blank" class="port-link">Ver no LinkedIn →</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="port-card" data-cat="agro">
+          <div class="port-card-top gold-gradient">
+            <span class="port-card-icon">🌾</span>
+          </div>
+          <div class="port-card-body">
+            <span class="port-tag">Agronegócio</span>
+            <h3>Agricultura de Precisão</h3>
+            <p>Aplicação de fundamentos de agricultura de precisão no contexto das
+               concessionárias John Deere, conectando dados de máquinas ao campo.</p>
+            <a href="https://www.linkedin.com/in/isaac-pereira-correa-147509315/" target="_blank" class="port-link">Ver no LinkedIn →</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="port-card" data-cat="tech">
+          <div class="port-card-top dark-gradient">
+            <span class="port-card-icon">💻</span>
+          </div>
+          <div class="port-card-body">
+            <span class="port-tag">Tecnologia</span>
+            <h3>Portfólio Web</h3>
+            <p>Este próprio site — desenvolvido do zero com HTML5, CSS3 e JavaScript puro,
+               sem frameworks, com tema escuro/claro e design responsivo.</p>
+            <a href="https://github.com/isaacytbr" target="_blank" class="port-link">Ver no GitHub →</a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="port-card" data-cat="tech">
+          <div class="port-card-top purple-gradient">
+            <span class="port-card-icon">🎬</span>
+          </div>
+          <div class="port-card-body">
+            <span class="port-tag">Tecnologia</span>
+            <h3>Motion Design — After Effects</h3>
+            <p>Estudos e projetos de motion design utilizando Adobe After Effects,
+               explorando animações e edição de vídeo como hobby criativo.</p>
+            <a href="https://www.linkedin.com/in/isaac-pereira-correa-147509315/" target="_blank" class="port-link">Ver no LinkedIn →</a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="port-card" data-cat="cert">
+          <div class="port-card-top jd-gradient">
+            <span class="port-card-icon">🏆</span>
+          </div>
+          <div class="port-card-body">
+            <span class="port-tag">Certificações</span>
+            <h3>18+ Certificados John Deere</h3>
+            <p>Mais de 18 certificados de conclusão pela John Deere University,
+               abrangendo máquinas, agricultura de precisão, monitores e conectividade.</p>
+            <a href="formacao.html" class="port-link">Ver formação completa →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-alt">
+    <div class="container cta-box">
+      <h2 class="cta-title">Quer colaborar?</h2>
+      <p class="cta-sub">Estou aberto a novas conexões, projetos e oportunidades no campo da tecnologia e agronegócio.</p>
+      <a href="contato.html" class="btn btn-primary">Entrar em Contato</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© 2025 Isaac Pereira Correa</span>
+      <span class="footer-sep">·</span>
+      <span>Desenvolvido com HTML5, CSS3 e JavaScript</span>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
